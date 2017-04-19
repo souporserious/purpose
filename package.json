@@ -1,0 +1,9 @@
+{
+  "name": "purpose",
+  "version": "0.0.1",
+  "description": "A standard way to style your React components.",
+  "main": "index.js",
+  "repository": "https://github.com/souporserious/purpose",
+  "author": "Travis Arnold",
+  "license": "MIT"
+}
