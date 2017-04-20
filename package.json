@@ -2,8 +2,42 @@
   "name": "purpose",
   "version": "0.0.1",
   "description": "A standard way to style your React components.",
-  "main": "index.js",
+  "main": "dist/the-answer.js",
+  "module": "dist/the-answer.es.js",
   "repository": "https://github.com/souporserious/purpose",
   "author": "Travis Arnold",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "webpack-dev-server --hot --progress --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "cxs": "^3.0.4",
+    "express": "^4.15.2",
+    "live-server": "^1.2.0",
+    "node-watch": "^0.5.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-livereload": "^0.4.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-serve": "^0.3.0",
+    "rollup-watch": "^3.2.2",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.8",
+    "resize-observer-polyfill": "^1.4.2"
+  }
 }
