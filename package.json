@@ -1,15 +1,19 @@
 {
   "name": "purpose",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A standard way to style your React components.",
-  "main": "dist/the-answer.js",
-  "module": "dist/the-answer.es.js",
+  "main": "lib/index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "repository": "https://github.com/souporserious/purpose",
   "author": "Travis Arnold",
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir lib",
-    "dev": "webpack-dev-server --hot --progress --host 0.0.0.0"
+    "dev": "webpack-dev-server --hot --progress --host 0.0.0.0",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
