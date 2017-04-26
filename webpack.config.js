@@ -26,6 +26,10 @@ const config = {
         test: /\.(js|jsx)/,
         use: [{ loader: 'babel-loader' }],
       },
+      {
+        test: /\.(json)/,
+        use: [{ loader: 'json-loader' }],
+      },
     ],
   },
 
